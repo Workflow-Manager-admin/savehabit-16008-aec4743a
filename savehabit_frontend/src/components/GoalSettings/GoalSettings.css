@@ -1,0 +1,22 @@
+.goal-settings {
+  display: flex;
+  gap: .8em;
+  align-items: center;
+  margin-bottom: 1.3em;
+  justify-content: flex-start;
+}
+
+.goal-settings__label {
+  font-size: 1em;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.goal-settings__input {
+  width: 6.5em;
+  padding: .38em 1em;
+  border-radius: 99px;
+  border: 1px solid var(--border-light);
+  font-size: 1.08em;
+  outline: none;
+}

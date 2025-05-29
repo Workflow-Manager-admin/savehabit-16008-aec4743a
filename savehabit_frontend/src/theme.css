@@ -1,0 +1,125 @@
+:root {
+  --primary: #FFD700;
+  --secondary: #FFFFFF;
+  --accent: #FF69B4;
+
+  --background: var(--secondary);
+  --text-main: #222;
+  --text-accent: var(--accent);
+  --border-light: rgba(0,0,0,0.07);
+
+  --btn-radius: 1.25em;
+  --btn-large-padding: 1em 2em;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-main);
+}
+
+.savings-app__highlight {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.savings-app__accent {
+  color: var(--accent);
+}
+
+.savings-container {
+  max-width: 420px;
+  margin: 0 auto;
+  background: var(--secondary);
+  border-radius: 1.25em;
+  box-shadow: 0 6px 36px #ffd7002a;
+  padding: 1.5em 1.25em 1.5em 1.25em;
+}
+
+.savings-section-title {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: .5em;
+}
+
+.savings-btn {
+  background: var(--primary);
+  color: var(--secondary);
+  border: none;
+  border-radius: var(--btn-radius);
+  padding: .7em 1.4em;
+  font-size: 1.15rem;
+  margin: .3em .4em;
+  font-weight: 600;
+  box-shadow: 0 2px 12px #ffd70046;
+  cursor: pointer;
+  transition: background .15s;
+}
+
+.savings-btn:active,
+.savings-btn:focus {
+  background: #ffe066;
+}
+
+.savings-btn--accent {
+  background: var(--accent);
+  color: var(--secondary);
+}
+
+.savings-goal-progress {
+  background: #ffd70014;
+  border-radius: 99px;
+  height: 14px;
+  margin: 1.1em 0;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 #ffd70017;
+}
+
+.savings-goal-progress-bar {
+  background: var(--accent);
+  height: 100%;
+  transition: width 0.3s;
+}
+
+@media (max-width: 600px) {
+  .savings-container {
+    padding: 1em .7em 2.5em .7em;
+  }
+}
+
+.tab-nav {
+  display: flex;
+  justify-content: space-around;
+  background: var(--primary);
+  padding: .3em 0;
+  border-radius: 1.5em;
+  margin: .8em 0 1.4em 0;
+}
+
+.tab-nav__btn {
+  font-size: 1.06em;
+  flex: 1 1 0;
+  color: #000;
+  background: none;
+  border: none;
+  font-weight: 600;
+  padding: 0.8em 0.5em;
+  border-radius: 2em;
+  transition: background .15s, color .15s;
+  cursor: pointer;
+}
+
+.tab-nav__btn--active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.motivation-banner {
+  text-align: center;
+  padding: .75em 0;
+  font-size: 1.06em;
+  background: #fffbe9;
+  color: var(--accent);
+  border-radius: 0.6em;
+  margin-bottom: 1.15em;
+}

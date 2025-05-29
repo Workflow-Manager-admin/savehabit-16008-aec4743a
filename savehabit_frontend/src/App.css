@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  /* font-family now set globally in theme.css via 'Poppins', avoid override here */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

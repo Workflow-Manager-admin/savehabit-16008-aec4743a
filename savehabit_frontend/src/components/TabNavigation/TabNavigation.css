@@ -1,0 +1,26 @@
+.tab-nav {
+  display: flex;
+  justify-content: space-around;
+  background: var(--primary);
+  padding: .3em 0;
+  border-radius: 1.5em;
+  margin: .8em 0 1.4em 0;
+}
+
+.tab-nav__btn {
+  font-size: 1.06em;
+  flex: 1 1 0;
+  color: #000;
+  background: none;
+  border: none;
+  font-weight: 600;
+  padding: 0.8em 0.5em;
+  border-radius: 2em;
+  transition: background .15s, color .15s;
+  cursor: pointer;
+}
+
+.tab-nav__btn--active {
+  background: var(--accent);
+  color: #fff;
+}

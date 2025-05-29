@@ -1,0 +1,36 @@
+.savings-summary__main {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: .5em;
+}
+
+.savings-summary__amount {
+  font-weight: 700;
+}
+
+.savings-summary__goal {
+  font-size: 1rem;
+  color: var(--text-accent);
+}
+
+.savings-goal-progress {
+  background: #ffd70014;
+  border-radius: 99px;
+  height: 14px;
+  margin: 1.1em 0;
+  overflow: hidden;
+  box-shadow: 0 1px 3px 0 #ffd70017;
+}
+
+.savings-goal-progress-bar {
+  height: 100%;
+  transition: width 0.3s;
+}
+.savings-summary__progress {
+  margin-bottom: 1.2em;
+  color: var(--accent);
+  text-align: right;
+  font-weight: 500;
+}
